@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#logo">E-Learning</a></div>
+            <ul class="link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topic">Topic</a></li>
+                <li><a href="#member">Members</a></li>
+            </ul>
+            <a href="#start" class="start">Get Started</a>
+            <div class="toggle">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topic">Topic</a></li>
+                <li><a href="#member">Members</a></li>
+                <li><a href="#start" class="starts">Get Started</a></li>
+            </div>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle')
+        const toggleBtnIcon = document.querySelector('.toggle i')
+        const menu = document.querySelector('.menu')
+        
+        toggleBtn.onclick = function() {
+            menu.classList.toggle('open')
+            const isOpen = menu.classList.contains('open')
+            
+            toggleBtnIcon.classList =isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+    <main class="container">
+        <section id="home">
+            <div class="title">
+                <small>Group 5</small>
+                <h1 data-text="Theory Of Computation">Theory Of Computation</h1>
+            </div>
+        </section>
+		<div class="txtstart" id="start">
+			<div class="tocmeaning">
+				<h2>Theory Of Computation(TOC)</h2></br></br>
+				<p>is a branch of Computer Science that is concerned with how problems can be solved using algorithms and how efficiently they can be solved.</br></br>
+				Real-world computers perform computations that by nature run like mathematical models to solve problems in systematic ways. The essence of the theory of computation is to help develop mathematical and logical models that run efficiently and to the point of halting. Since all machines that implement logic apply TOC, studying TOC gives learners an insight into computer hardware and software limitations.</p></br></br>
+				<h2>Importance of Theory of computation</h2></br></br>
+				<p><b>The theory of computation forms the basis for:</b></p></br></br>
+				<ul>
+					<li><p>Writing efficient algorithms that run in computing devices.</p></li>
+					<li><p>Programming language research and their development.</p></li>
+					<li><p>Efficient compiler design and construction.</p></li>
+				</ul>
+			</div>
+			<img src="img5.jpg">
+		</div>
+		<section id="topic">
+			<div class="topic-link" id="automata-link">
+				<div class="glass-effect">
+				</div>
+				<div class="topic-title">
+					<small>Theory Of Computation</small>
+					<h2>Automata Theory</h2>
+					<p>a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. The main motivation behind developing the automata theory was to develop methods to describe and analyse the dynamic behaviour of discrete systems.</p></br>
+					<a href="#automata" class="btn">Learn Automata Theory</a>
+				</div>
+				<div class="topic-list">
+					<a  href="#automata-link">
+						<div class="thumbnail" style="background:url('img3.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Automata Theory</h2>
+							</div>	
+						</div>
+					</a>
+					<a  href="#complexity-link">
+						<div class="thumbnail" style="background:url('img.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Complexity Theory</h2>
+							</div>
+						</div>
+					</a>
+					<a  href="#computability-link">
+						<div class="thumbnail" style="background:url('img8.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Computability Theory</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="topic-link2" id="complexity-link">
+				<div class="glass-effect">
+				</div>
+				<div class="topic-title">
+					<small>Theory Of Computation</small>
+					<h2>Complexity Theory</h2>
+					<p>This theoretical computer science branch is all about studying the cost of solving problems while focusing on resources (time & space) needed as the metric. The running time of an algorithm varies with the inputs and usually grows with the size of the inputs.</p></br>
+					<a href="#complexity" class="btn">Learn Compexity Theory</a>
+				</div>
+				<div class="topic-list">
+					<a  href="#automata-link">
+						<div class="thumbnail" style="background:url('img3.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Automata Theory</h2>
+							</div>	
+						</div>
+					</a>
+					<a  href="#complexity-link">
+						<div class="thumbnail" style="background:url('img.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Complexity Theory</h2>
+							</div>
+						</div>
+					</a>
+					<a  href="#computability-link">
+						<div class="thumbnail" style="background:url('img8.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Computability Theory</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="topic-link3" id="computability-link">
+				<div class="glass-effect">
+				</div>
+				<div class="topic-title">
+					<small>Theory Of Computation</small>
+					<h2>Computability Theory</h2>
+					<p>Defines whether a problem is “solvable” by any abstract machine. Some problems are computable while others are not. Computation is done by various computation models depending on the nature of the problem at hand, examples of these machines are: the Turing machine, Finite state machines, and many others.</p></br>
+					<a href="#computability" class="btn">Learn Compexity Theory</a>
+				</div>
+				<div class="topic-list">
+					<a  href="#automata-link">
+						<div class="thumbnail" style="background:url('img3.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Automata Theory</h2>
+							</div>	
+						</div>
+					</a>
+					<a  href="#complexity-link">
+						<div class="thumbnail" style="background:url('img.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Complexity Theory</h2>
+							</div>
+						</div>
+					</a>
+					<a  href="#ocmputability-link">
+						<div class="thumbnail" style="background:url('img8.jpg')">
+							<div class="details">
+								<p class="TOC">Theory Of Computation</p>
+								<h2>Computability Theory</h2>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="automata">
+			<div class="glass-effect">
+			</div>
+			<div class="topic-title">
+				<small>Theory Of Computation</small>
+				<h2>Automata Theory</h2>
+				<p>a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. The main motivation behind developing the automata theory was to develop methods to describe and analyse the dynamic behaviour of discrete systems.</p></br>
+			</div>
+		</section>
+			<div class="txtss">
+				<p>This automation consists of states and transitions. The State is represented by circles, and the Transitions is represented by arrows.</br></br>
+				Automata is the kind of machine which takes some string as input and this input goes through a finite number of states and may state.</p></br></br>
+				<p><b>There are the basic terminologies that are important and frequently used in automata:</b></p></br></br>
+				<p><b>Symbols:</b></p></br></br>
+				<p>Symbols are an entity or individual objects, which can be any letter, alphabet or any picture.</p></br></br>
+				<p><b>Example:</b></p></br></br>
+				<p>1, a, b, #</p></br></br>
+				<p><b>Alphabets:</b></p></br></br>
+				<p>Alphabets are a finite set of symbols. It is denoted by ∑.</p></br></br>
+				<p><b>Examples:</b></p></br></br>
+				<div class="example">
+					<p>∑ = {a, b}</br></br>
+						∑ = {A, B, C, D}</br></br>
+						∑ = {0, 1, 2}</br></br>
+						∑ = {0, 1, ....., 5]</br></br>
+						∑ = {#, β, Δ}</br></br></p>
+				</div></br></br>
+				<p><b>String:</b><p></br></br>
+				<p>It is a finite collection of symbols from the alphabet. The string is denoted by w.</p></br></br>
+				<p><b>Example 1:</b></p></br></br>
+				<p>If ∑ = {a, b}, various string that can be generated from ∑ are {ab, aa, aaa, bb, bbb, ba, aba.....}.</p></br></br>
+				<ul>
+					<li><p>A string with zero occurrences of symbols is known as an empty string. It is represented by ε.</p></li></br></br>
+					<li><p>The number of symbols in a string w is called the length of a string. It is denoted by |w|</p></li></br></br>
+				</ul>
+				<p><b>Example 2:</b></p></br></br>
+				<div class="example">
+					<p>w = 010</br></br>
+					Number of Sting |w| = 3</p></br>
+				</div></br>
+				<p><b>Language:</b></p></br></br>
+				<p>A language is a collection of appropriate string. A language which is formed over Σ can be Finite or Infinite</p></br></br>
+				<p><b>Example: 1</b></p></br></br>
+				<div class="example">
+					<p><b>L1 = {Set of string of length 2}</b></p></br></br>
+					<p><b>= {a, aa, aaa, abb, abbb, ababb}         Infinite Language</b></p></br>
+				</div></br>
+				<p><b>Example: 2</b></p></br></br>
+				<div class="example">
+					<p>L2 = {Set of all strings starts with 'a'}</p></br></br>
+					<p>= {a, aa, aaa, abb, abbb, ababb}         Infinite Language</p></br>
+				</div></br></br>
+				<p><b>Branches of Automata theory</b></p></br></br>
+				<ul>
+					<li><p>Finite Automata (FA): This is a computer model that is inferior in its computation ability. This model is fit for devices with limited memory. It is a simple abstract machine with five elements that define its functioning and processing of problems.</p></li></br></br>
+				</ul>
+				<p>A <b>Finite Automaton (FA)</b> is a finite collection of states with rules (transition functions) for traversing through the states depending on the input symbol. FA accepts or rejects input strings while reading the strings from left to right.</p></br></br>
+				<p><b>The tuples are:</b></p></br></br>
+				<ul>
+					<li><p><b>Q:</b> Finite set of states.</p></li></br></br>
+					<li><p><b>∑:</b> Set of input symbols.</li></br></br>
+					<li><p><b>q:</b> Initial state.</p></li></br></br>
+					<li><p><b>F:</b> Set of final states.</p></li></br></br>
+					<li><p><b>δ:</b> Transition function.</p></li></br></br>
+				</ul>
+				<p>Finite Automata is useful in building text editors/text preprocessors. FA are poor models of computers. They can only perform simple computational tasks.</p></br></br>
+				<ul>
+					<li><p><b>Context-Free Grammars (CFGs):</b> They are more powerful abstract models than FA and are essentially used in the programming languages and natural language research work.</p></li></br></br>
+					<li><p><b>Turing Machines:</b> They are abstract models for real computers having an infinite memory (in the form of a tape) and a reading head. They form much more powerful computation models than FA, CFGs, and Regular Expressions.</p></li></br></br>
+				</ul>
+			</div>
+			<section id="complexity">
+				<div class="glass-effect">
+				</div>
+				<div class="topic-title">
+					<small>Theory Of Computation</small>
+					<h2>Complexity Theory</h2>
+					<p>This theoretical computer science branch is all about studying the cost of solving problems while focusing on resources (time & space) needed as the metric. The running time of an algorithm varies with the inputs and usually grows with the size of the inputs.</p></br>
+				</div>
+			</section>
+		<div class="txtss">
+			<p><b>Measuring Complexity</b></p></br></br>
+			<p>Measuring complexity involves an algorithm analysis to determine how much time it takes while solving a problem (time complexity). To evaluate an algorithm, a focus is made on relative rates of growth as the size of the input grows.</p></br></br>
+			<p>Since the exact running time of an algorithm often is a complex expression, we usually just estimate it. We measure an algorithm’s time requirement as a function of the input size (n) when determining the time complexity of an algorithm.</p></br></br>
+			<p>As T(n), the time complexity is expressed using the Big O notation where only the highest order term in the algebraic expressions are considered while ignoring constant values.</p></br></br>
+			<p><b>The common running times when analyzing algorithms are:</b></p></br></br>
+			<ul>
+				<li><p><b>O(1)</b> - Constant time or constant space regardless of the input size.</li></p></br></br>
+				<li><p><b>O(n)</b> - Linear time or linear space, where the requirement increases uniformly with the size of the input.</li></p></br></br>
+				<li><p><b>O(log n)</b> - Logarithmic time, where the requirement increases in a logarthimic nature.</li></p></br></br>
+				<li><p><b>O(n^2)</b> - Quadratic time, where the requirement increases in a quadratic nature.</li></p></br></br>	
+			</ul>
+			<p>This analysis is based on 2 bounds that can be used to define the cost of each algorithm.</p></br></br>
+			<p><b>They are:</b></p></br></br>
+			<ul>
+				<li><p>Upper (Worst Case Scenario)</p></li></br></br>
+				<li><p>Lower (Best Case Scenario)</p></li></br></br>
+			</ul>
+			<p><b>The major classifications of complexities include:</b></p></br></br>
+			<ul>
+				<li><p>Class P: The class P consists of those problems that are solvable in polynomial time. These are problems that can be solved in time O(n^k) for some constant k where n is the input size to the problem. It is devised to capture the notion of efficient computation.</p></li></br></br>
+				<li><p>Class NP: It forms the class of all problems whose solution can be achieved in polynomial time by non-deterministic Turing machine. NP is a complexity class used to classify decision problems.</p></li></br></br>
+			</ul>
+			<p>A major contributor to the complexity theory is the complexity of the algorithm used to solve the problem. Among several algorithms used in solving computational problems are those whose complexity can range from fairly complex to very complex.</p></br></br>
+			<p>The more complex an algorithm, the more computational complexity will be in a given problem.</p></br></br>
+			<p><b>Factors that influence program efficiency</b></p></br></br>
+			<ul>
+				<li><p>The problem being solved.</p></li></br></br>
+				<li><p>The algorithm used to build the program.</p></li></br></br>
+				<li><p>Computer hardware.</p></li></br></br>
+				<li><p>Programming language used.</p></li></br></br>
+			</ul>
+			<p><b>Conclusion</b></p></br></br>
+			<p>Programs are formally written from descriptions of computations for execution on machines. We’ve learned that TOC is concerned with a formalism that helps build efficient programs. Efficient algorithms lead to better programs that optimally use hardware resources.</p></br></br>
+			<p>Good understanding of the Theory of Computation helps programmers and developers express themselves clearly and intuitively, thus avoiding entering into potentially uncomputable problems while working with computational models.</p></br></br>
+		</div>
+		<section id="computability">
+			<div class="glass-effect">
+			</div>
+			<div class="topic-title">
+				<small>Theory Of Computation</small>
+				<h2>Computability Theory</h2>
+				<p>Defines whether a problem is “solvable” by any abstract machine. Some problems are computable while others are not. Computation is done by various computation models depending on the nature of the problem at hand, examples of these machines are: the Turing machine, Finite state machines, and many others.</p></br>
+			</div>
+		</section>
+		<div class="txtss">
+			<p>
+				<b>Computability theory</b> is the area of mathematics dealing with the concept of an effective procedure—a procedure that can be carried out by following specific rules. For example, one might ask whether there is some effective procedure—some algorithm—that, given a sentence about the positive integers, will decide whether that sentence is true or false. In other words, is the set of true sentences about the positive integers decidable? Or for a much simpler example, the set of prime numbers is certainly a decidable set. That is, there are mechanical procedures, that are taught in the schools, for deciding of any given positive integer whether or not it is a prime number.</br></br>
+				More generally, consider a set S, which can be either a set of natural numbers (the natural numbers are 0, 1, 2, … ), or a set of strings of letters from a finite alphabet. (These two situations are entirely interchangeable. A set of natural numbers is much like a set of base-10 numerals, which are strings of digits. And in the other direction, a string of letters can be coded by a natural number in a variety of ways. The best way is, where the alphabet has k symbols, to utilize k -adic notation, which is like base-k numerals except that the k digits represent 1, 2, …, k, without a 0 digit.) One can say that S is a decidable set if there exists an effective procedure that, given any natural number (in the first case) or string of letters (in the second case), will eventually end by supplying the answer: "Yes" if the given object is a member of S and "No" if it is not a member of S.</br></br>
+				And by an effective procedure here is meant a procedure for which one can give exact instructions—a program—for carrying out the procedure. Following these instructions should not demand brilliant insights on the part of the agent (human or machine) following them. It must be possible, at least in principle, to make the instructions so explicit that they can be executed by a diligent clerk (who is good at following directions but is not too clever) or even a machine (which does not think at all).</br></br>
+				Although these instructions must of course be finite in length, no upper bound on their possible length is imposed. It is not ruled out that the instructions might even be absurdly long. Similarly, to obtain the most comprehensive concepts, no bounds are imposed on the time that the procedure might consume before it supplies the answer. Nor is a bound imposed on the amount of storage space (scratch paper) that the procedure might need to use. One merely insists that the procedure give an answer eventually, in some finite length of time.</br></br>
+				Later, in section 7, more restrictive concepts will be considered, where the amount of time is limited in some way, so as to exclude the possibility of ridiculously long execution times. Initially, however, one wants to avoid such restrictions, to obtain the limiting case where practical limitations on execution time or memory space are removed.</br></br>
+				This description of effective procedures, vague as it is, already shows how limiting the concept of decidability is. It is not hard to see that there are only countably many possible instructions of finite length that one can write out (using a standard keyboard, say). There are, however, uncountably many sets of natural numbers (by Cantor's diagonal argument). It follows that almost all sets, in a sense, are undecidable.</br></br>
+				The following section will look at how the foregoing vague description of effective procedures can be made more precise—how it can be made into a mathematical concept. Nonetheless, the informal idea of what can be done by effective procedure, that is, what is calculable, can be useful.</br></br>
+				For another example, consider what is required for a string of symbols to constitute an acceptable mathematical proof. Before one accepts a proof and adds the result being proved to the storehouse of mathematical knowledge, one insists that the proof be verifiable. That is, it should be possible for another mathematician, such as the referee of the paper containing the proof, to check, step by step, the correctness of the proof. Eventually, the referee concludes either that the proof is indeed correct or that the proof contains a gap or an error and is not yet acceptable. That is, the set of acceptable mathematical proofs should be decidable. This fact will be seen (in section 4) to have significant consequences for what can and cannot be proved. The conclusion follows that computability theory is relevant to the foundations of mathematics.</br></br>
+				Before going on, one should broaden the canvas from considering decidable and undecidable sets to considering the more general situation of partial functions. Let U be either the set ℕ = {0,1,2, … } of natural numbers or the set Σ* of all strings of letters—all words—from a finite alphabet Σ. Then a k -place partial function on U is a function whose domain is included in Uk = U × U × … × U and whose range is included in U. And one can say that such a function is total if its domain is all of Uk.</br></br>
+				<b>For a k -place partial function f, one can say that f is an effectively calculable partial function if there exists an effective procedure with the following property:</b></br></br>
+				<ul>
+					<li><p>Given a k -tuple x in the domain of f, the procedure eventually halts and returns the correct value for f (x )</p></li></br></br>
+					<li><p>Given a k -tuple x not in the domain of f, the procedure does not halt and return a value</p></li></br></br>
+				</ul>
+				(Strictly speaking, when U is ℕ, the procedure cannot be given numbers, it must be given numerals. Numerals are bits of language, which can be communicated. Numbers are not. Thus, the difference between U = ℕ and U = Σ* is even less than previously indicated.)</br></br>
+				<b>For example, the partial function for subtraction</b></br></br>
+				(where ↑ indicates that the function is undefined) is effectively calculable, and procedures for calculating it, using base-10 numerals, are taught in the elementary schools.</br></br>
+				The concept of decidability can then be described in terms of functions: For a subset S of Uk, one can say that S is decidable if its characteristic function</br></br>
+				(which is always total) is effectively calculable. Here, "Yes" and "No" are some fixed members of U, such as 1 and 0 in the case of ℕ.</br></br>
+				Here, if k = 1, then S is a set of numbers or a set of words. If k = 2, then one has the concept of a decidable binary relation on numbers or words, and so forth.</br></br>
+				And it is natural to extend this concept to the situation where one has half of decidability: Say that S is semidecidable if its partial characteristic function is an effectively calculable partial function. Thus, a set S of words—a language—is semidecidable if there is an effective procedure for recognizing members of S. One can think of S as the language that the procedure accepts.</br></br>
+				<b>The following is another example of a calculable partial function:</b></br></br>
+				F (n ) = the smallest p > n such that both p and p + 2 are prime
+Here, it is to be understood that F (n ) is undefined if there is no number p as described; thus F might not be total. For example, F (9) = 11. It is not known whether or not F is total. Nonetheless, one can be certain that F is effectively calculable. One procedure for calculating F (n ) proceeds as follows. "Given n, first put p = n + 1. Then check whether or not p and p + 2 are both prime. If they are, then stop and give output p. If not, increment p and continue." What if n = 101000? On the one hand, if there is a larger prime pair, then this procedure will find the first one, and halt with the correct output. On the other hand, if there is no larger prime pair, then the procedure never halts, so it never gives an answer. That is all right, because F (n ) is undefined—the procedure should not give any answer. (Of course, F is total if and only if (iff) the twin prime conjecture is true.)</br></br>
+				<b>Now suppose one modifies this example. Consider the total function:</b></br></br>
+				Here, F (n ) ↓ means that F (n ) is defined so that n belongs to the domain of F. Then the function G is also effectively calculable. That is, there exists a program that calculates G correctly. That is not the same as saying that one knows that program. This example indicates the difference between knowing that a certain effective procedure exists and having the effective procedure in one's hands.</br></br>
+				One person's program is another person's data. This is the principle behind operating systems (and behind the idea of a stored-program computer). One's favorite program is, to the operating system, another piece of data to be received as input and processed. The operating system is calculating the values of a two-place "universal" function, as in the following example.</br></br>
+				Suppose one adopts a fixed method of encoding any set of instructions by a single natural number. (First, one converts the instructions to a string of 0s and 1s—one always does this with computer programs—and then one regards that string as naming a natural number under a suitable base-2 notation.) Then, the universal function
+Φ(x, y ) = the result of applying the instructions coded by y to the input x
+is an effectively calculable partial function (where it is understood that Φ(x, y ) is undefined whenever applying the instructions coded by y to the input x fails to halt and return an output). Here are the instructions for Φ: "Given x and y, decode y to see what it says to do with x, and then do it." Of course, the function Φ is not total.</br></br>
+				<b>Using this universal partial function, one can construct an undecidable binary relation, the halting relation H :</b></br></br>
+				(x,y) ∈H ⇔ Φ (x,y)↓
+⇔ applying the instructions coded byy to input x halts</br></br>
+				<b>To see that H is undecidable, one can argue as follows. Suppose that, to the contrary, H is decidable. Then the following function would be effectively calculable:</b></br></br>
+				(Notice the use of the classical diagonal construction.) (To compute f (x ), one first would decide if (x, x ) ∈ H. If not, then f (x ) = Yes. If (x, x ) ∈ H, however, then the procedure for finding f (x ) should throw itself into an infinite loop, because f (x ) is undefined.) The function f cannot possibly be effectively calculable, however. Consider any set of instructions that might compute f. Those instructions have some code number k, but f has been constructed in such a way that f (k ) differs from the output from the result of applying instructions coded by k to the input k. (They differ because one is defined and one is not.) So these instructions cannot correctly compute f ; they produce the wrong result at the input k. And so one has a contradiction. That the previous relation H is undecidable is usually expressed by saying that "the halting problem is unsolvable"; that is, one cannot effectively determine, given x and y, whether applying the instructions coded by y to the input x will eventually terminate or will go on forever.</br></br>
+				While the concept of effective calculability has been described in somewhat vague terms here, the following section will give a precise (mathematical) concept of a computable partial function. And then it will be argued that the mathematical concept of a computable partial function is the correct formalization of the informal concept of an effectively calculable partial function. This claim is known as Church's thesis or the Church-Turing thesis. Church's thesis, which relates an informal idea to a formal idea, is not itself a mathematical statement, capable of being given a proof, but one can look for evidence for or against Church's thesis; it all turns out to be evidence in favor.</br></br>
+				One piece of evidence is the absence of counterexamples. That is, any function examined thus far that mathematicians have felt was effectively calculable, has been found to be computable.</br></br>
+				Stronger evidence stems from the various attempts that different people made independently, trying to formalize the idea of effective calculability. Alonzo Church used λ-calculus, Alan M. Turing used an idealized computing agent (later called a Turing machine), and Emil Post developed a similar approach. Remarkably, all these attempts turned out to be equivalent, in that they all defined exactly the same class of functions, namely, the computable partial functions!</br></br>
+			</p>
+		</div>
+		<section id="member">
+			<div class="mem">
+				<div class="info">
+					<h2>Bhelloejoe B. Dumagan</h2></br></br>
+					<p><b>Birthdate:</b> December 5,2002</p></br>
+					<p><b>Age:</b> 20</p></br>
+					<p><b>Address:</b> Purok 2 Doyos, Carrascal Surigao del Sur</p>
+				</div>
+				<img src="jet.jpg">
+			</div></br></br>
+			<div class="mem">
+			<img src="jessa.jpg">
+				<div class="info">
+					<h2>Jessa Mae P. Celeste</h2></br></br>
+					<p><b>Birthdate:</b> June 20,2000</p></br>
+					<p><b>Age:</b> 22</p></br>
+					<p><b>Address:</b> Baybay Carrascal Surigao del Sur</p>
+				</div>
+			</div></br></br>
+			<div class="mem">
+				<div class="info">
+					<h2>Cherry Joy E. Solana</h2></br></br>
+					<p><b>Birthdate:</b> November 20, 2001</p></br>
+					<p><b>Age:</b> 21</p></br>
+					<p><b>Address:</b> Hayanggabon, Claver, Surigao del Sur</p>
+				</div>
+				<img src="cherry.jpg">
+			</div></br></br>
+			<div class="mem">
+			<img src="rona.jpg">
+				<div class="info">
+					<h2>Ronalyn L. Peruda</h2></br></br>
+					<p><b>Birthdate:</b> October 28,2002</p></br>
+					<p><b>Age:</b> 20</p></br>
+					<p><b>Address:</b> Ipil, Gigaquit, Surigao del Sur</p>
+				</div>
+			</div></br></br>
+			<div class="mem">
+				<div class="info">
+					<h2>Jessaly Q. Rosil</h2></br></br>
+					<p><b>Birthdate:</b> June 26, 2001</p></br>
+					<p><b>Age:</b> 21</p></br>
+					<p><b>Address:</b> Purok 4 Pag-Antayan, Cantilan Surigao del Sur</p>
+				</div>
+				<img src="jessaly.jpg">
+			</div></br></br>
+		</section>
+	</main>

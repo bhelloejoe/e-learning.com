@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="web2.css">
+</head>
+<body>
+	<header>
+        <div class="navbar">
+            <div class="logo"><a href="#logo">E-Learning</a></div>
+            <ul class="link">
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#home">Home</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#topic">Topic</a></li>
+                <li><a href="#">Members</a></li>
+            </ul>
+            <a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#start" class="start">Get Started</a>
+            <div class="toggle">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu">
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#home">Home</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#topic">Topic</a></li>
+                <li><a href="#member">Members</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#start" class="starts">Get Started</a></li>
+            </div>
+        </div>
+    </header>
+	<script>
+        const toggleBtn = document.querySelector('.toggle')
+        const toggleBtnIcon = document.querySelector('.toggle i')
+        const menu = document.querySelector('.menu')
+        
+        toggleBtn.onclick = function() {
+            menu.classList.toggle('open')
+            const isOpen = menu.classList.contains('open')
+            
+            toggleBtnIcon.classList =isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+	<div class="container">
+	<section id="computability">
+		<div class="background">
+		<div class="glass-effect">
+		</div>
+			<div class="topic-title">
+				<small>Theory Of Computation</small>
+				<h2>Computability Theory</h2>
+				<p>Defines whether a problem is “solvable” by any abstract machine. Some problems are computable while others are not. Computation is done by various computation models depending on the nature of the problem at hand, examples of these machines are: the Turing machine, Finite state machines, and many others.</p></br>
+			</div>
+		</div>
+	</section>
+	</div>
+</body>
+</html>
+
+https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/computability-theory

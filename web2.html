@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="web2.css">
+</head>
+<body>
+	<header>
+        <div class="navbar">
+            <div class="logo"><a href="#logo">E-Learning</a></div>
+            <ul class="link">
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#home">Home</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#topic">Topic</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#member">Members</a></li>
+            </ul>
+            <a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#start" class="start">Get Started</a>
+            <div class="toggle">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu">
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#home">Home</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#topic">Topic</a></li>
+                <li><a href="#member">Members</a></li>
+                <li><a href="C:/Users/Jean%20Cuadrado/Documents/website/web.html#start" class="starts">Get Started</a></li>
+            </div>
+        </div>
+    </header>
+	<script>
+        const toggleBtn = document.querySelector('.toggle')
+        const toggleBtnIcon = document.querySelector('.toggle i')
+        const menu = document.querySelector('.menu')
+        
+        toggleBtn.onclick = function() {
+            menu.classList.toggle('open')
+            const isOpen = menu.classList.contains('open')
+            
+            toggleBtnIcon.classList =isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+	<div class="container">
+	<section id="automata" href="#auto">
+	<div class="background">
+		<div class="glass-effect">
+		</div>
+		<div class="topic-title">
+			<small>Theory Of Computation</small>
+			<h2>Automata Theory</h2>
+			<p>a theoretical branch of computer science and mathematical. It is the study of abstract machines and the computation problems that can be solved using these machines. The abstract machine is called the automata. The main motivation behind developing the automata theory was to develop methods to describe and analyse the dynamic behaviour of discrete systems.</p></br>
+		</div>
+	</div>
+		<div class="txtss">
+			<p><b>Branches of Automata theory</b></p></br></br>
+				<ul>
+					<li><p>Finite Automata (FA): This is a computer model that is inferior in its computation ability. This model is fit for devices with limited memory. It is a simple abstract machine with five elements that define its functioning and processing of problems.</p></li></br></br>
+				</ul>
+				<p>A <b>Finite Automaton (FA)</b> is a finite collection of states with rules (transition functions) for traversing through the states depending on the input symbol. FA accepts or rejects input strings while reading the strings from left to right.</p></br></br>
+				<p><b>The tuples are:</b></p></br></br>
+				<ul>
+					<li><p><b>Q:</b> Finite set of states.</p></li></br></br>
+					<li><p><b>∑:</b> Set of input symbols.</li></br></br>
+					<li><p><b>q:</b> Initial state.</p></li></br></br>
+					<li><p><b>F:</b> Set of final states.</p></li></br></br>
+					<li><p><b>δ:</b> Transition function.</p></li></br></br>
+				</ul>
+				<p>Finite Automata is useful in building text editors/text preprocessors. FA are poor models of computers. They can only perform simple computational tasks.</p></br></br>
+				<ul>
+					<li><p><b>Context-Free Grammars (CFGs):</b> They are more powerful abstract models than FA and are essentially used in the programming languages and natural language research work.</p></li></br></br>
+					<li><p><b>Turing Machines:</b> They are abstract models for real computers having an infinite memory (in the form of a tape) and a reading head. They form much more powerful computation models than FA, CFGs, and Regular Expressions.</p></li></br></br>
+				</ul>
+				<p>This automation consists of states and transitions. The State is represented by circles, and the Transitions is represented by arrows.</br></br>
+				Automata is the kind of machine which takes some string as input and this input goes through a finite number of states and may state.</p></br></br>
+				<p><b>There are the basic terminologies that are important and frequently used in automata:</b></p></br></br>
+				<p><b>Symbols:</b></p></br></br>
+				<p>Symbols are an entity or individual objects, which can be any letter, alphabet or any picture.</p></br></br>
+				<p><b>Example:</b></p></br></br>
+				<p>1, a, b, #</p></br></br>
+				<p><b>Alphabets:</b></p></br></br>
+				<p>Alphabets are a finite set of symbols. It is denoted by ∑.</p></br></br>
+				<p><b>Examples:</b></p></br></br>
+				<div class="example">
+					<p>∑ = {a, b}</br></br>
+						∑ = {A, B, C, D}</br></br>
+						∑ = {0, 1, 2}</br></br>
+						∑ = {0, 1, ....., 5]</br></br>
+						∑ = {#, β, Δ}</p>
+				</div></br></br>
+				<p><b>String:</b><p></br></br>
+				<p>It is a finite collection of symbols from the alphabet. The string is denoted by w.</p></br></br>
+				<p><b>Example 1:</b></p></br></br>
+				<p>If ∑ = {a, b}, various string that can be generated from ∑ are {ab, aa, aaa, bb, bbb, ba, aba.....}.</p></br></br>
+				<ul>
+					<li><p>A string with zero occurrences of symbols is known as an empty string. It is represented by ε.</p></li></br></br>
+					<li><p>The number of symbols in a string w is called the length of a string. It is denoted by |w|</p></li></br></br>
+				</ul>
+				<p><b>Example 2:</b></p></br></br>
+				<div class="example">
+					<p>w = 010</br></br>
+					Number of Sting |w| = 3</p>
+				</div></br>
+				<p><b>Language:</b></p></br></br>
+				<p>A language is a collection of appropriate string. A language which is formed over Σ can be Finite or Infinite</p></br></br>
+				<p><b>Example: 1</b></p></br></br>
+				<div class="example">
+					<p>L1 = {Set of string of length 2}</p></br></br>
+					<p>= {a, aa, aaa, abb, abbb, ababb} &nbsp; &nbsp; &nbsp; <b>Infinite Language</b></p>
+				</div></br>
+				<p><b>Example: 2</b></p></br></br>
+				<div class="example">
+					<p>L2 = {Set of all strings starts with 'a'}</p></br></br>
+					<p>= {a, aa, aaa, abb, abbb, ababb} &nbsp; &nbsp; &nbsp; <b>Infinite Language</b></p>
+				</div></br></br>
+				<ul>
+					<li><p>Finite automata are used to recognize patterns.</p></li></br></br>
+					<li><p>It takes the string of symbol as input and changes its state accordingly. When the desired symbol is found, then the transition occurs.</p></li></br></br>
+					<li><p>At the time of transition, the automata can either move to the next state or stay in the same state.</p></li></br></br>
+					<li><p>Finite automata have two states, <b>Accept state</b> or <b>Reject state</b>. When the input string is processed successfully, and the automata reached its final state, then it will accept.</p></li></br></br>
+				</ul>
+				<p><b>Formal Definition of FA</b></p></br></br>
+				<p>A finite automaton is a collection of 5-tuple (Q, ∑, δ, q0, F), where:</p></br></br>
+				<div class="example">
+					<p>
+						Q: finite set of states</br></br>
+						∑: finite set of the input symbol</br></br>
+						q0: initial state</br></br>
+						F: final state</br></br>
+						δ: Transition function
+					</p>
+				</div></br></br>
+				<h1><b>Finite Automata Model:</b></h1></br></br>
+				<p>
+					Finite automata can be represented by input tape and finite control.</br></br>
+					<b>Input tape:</b> It is a linear tape having some number of cells. Each input symbol is placed in each cell.</br></br>
+					<b>Finite control:</b> The finite control decides the next state on receiving particular input from input tape. The tape reader reads the cells one by one from left to right, and at a time only one input symbol is read.</br></br>
+				</p>
+				<center><img src="img9.png" width="400px"></center></br></br>
+				<h1><b>Types of Automata:</b></h1></br></br>
+				<p>
+					There are two types of finite automata:</br></br>
+					<ol>
+						<li><p>DFA(deterministic finite automata)</p></li></br></br>
+						<li><p>NFA(non-deterministic finite automata)</p></li></br></br>
+					</ol>
+				</p>
+				<center><img src="img10.png" width="600px"></center></br></br>
+				<h1><b>1.DFA</b></h1></br>
+				<p>DFA refers to deterministic finite automata. Deterministic refers to the uniqueness of the computation. In the DFA, the machine goes to one state only for a particular input character. DFA does not accept the null move.</p></br></br>
+				<h1><b>2. NFA</b></h1></br>
+				<p>NFA stands for non-deterministic finite automata. It is used to transmit any number of states for a particular input. It can accept the null move.</p></br></br>
+				<h1><b>Some important points about DFA and NFA:</b></h1></br></br>
+				<ol>
+					<li><p>Every DFA is NFA, but NFA is not DFA.</p></li></br></br>
+					<li><p>There can be multiple final states in both NFA and DFA.</p></li></br></br>
+					<li><p>DFA is used in Lexical Analysis in Compiler.</p></li></br></br>
+					<li><p>NFA is more of a theoretical concept.</p></li></br></br>
+				</ol>
+			</div>
+	</section>
+	</div>
+</body>
+</html>
